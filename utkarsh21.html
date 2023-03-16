@@ -1,0 +1,24 @@
+<html>
+   <head><title>Using Text and Button objects in HTML Form</title>
+   
+   <script language="JavaScript">
+    
+	function calculate(form)
+	{
+	  form.results=eval(form.entry.value);
+	}
+	
+	</script></head>
+	
+	<body><form>Enter a JavaScript Mathematical Expression:
+	
+	<input type="Text" Name="entry" Value=""/>
+	
+	<input type="button" value="calculate" onClick="calculate(this.form);"/><br/>
+	
+	The result of this expression is:
+	
+	<input type="Text" Name="results" onFocus="this.blur();"/>
+	
+	</form></body>
+</html>
